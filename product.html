@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل المنتج | متجر إلكتروني</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- نفس Navbar من الصفحة الرئيسية -->
+
+    <!-- Product Details Section -->
+    <section class="product-details-section py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <!-- Product Images Gallery -->
+                <div class="col-md-6 mb-4">
+                    <div class="product-gallery">
+                        <div class="main-image mb-3">
+                            <img src="img/watch 1.jpg" id="mainImage" class="img-fluid" alt="Product">
+                        </div>
+                        <div class="thumbnail-images">
+                            <div class="row g-2">
+                                <div class="col-3">
+                                    <img src="img/watch 1.jpg" class="img-fluid thumbnail active" alt="Thumbnail 1">
+                                </div>
+                                <div class="col-3">
+                                    <img src="img/watch 2.jpg" class="img-fluid thumbnail" alt="Thumbnail 2">
+                                </div>
+                                <div class="col-3">
+                                    <img src="img/watch 3.jpg" class="img-fluid thumbnail" alt="Thumbnail 3">
+                                </div>
+                                <div class="col-3">
+                                    <img src="img/watch 4.jpg" class="img-fluid thumbnail" alt="Thumbnail 4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="col-md-6">
+                    <div class="product-info">
+                        <h1 class="product-title mb-3">ساعة ذكية برو ماكس</h1>
+                        <div class="product-rating mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="rating-count">(150 تقييم)</span>
+                        </div>
+                        <div class="product-price mb-4">
+                            <span class="new-price">599 دينار جزائري</span>
+                            <span class="old-price">799 دينار جزائري</span>
+                            <span class="discount-badge">خصم 25%</span>
+                        </div>
+                        <div class="product-description mb-4">
+                            <p>ساعة ذكية متطورة مع شاشة AMOLED مقاس 1.4 بوصة، مقاومة للماء، تتبع النشاط البدني، قياس معدل ضربات القلب، وبطارية تدوم حتى 14 يوم.</p>
+                        </div>
+                        <div class="product-variants mb-4">
+                            <h5>اللون:</h5>
+                            <div class="color-options">
+                                <button class="color-option active" style="background-color: #000000;"></button>
+                                <button class="color-option" style="background-color: #C0C0C0;"></button>
+                                <button class="color-option" style="background-color: #FFD700;"></button>
+                            </div>
+                        </div>
+                        <div class="product-quantity mb-4">
+                            <h5>الكمية:</h5>
+                            <div class="quantity-selector">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" value="1" min="1" max="10">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary btn-lg add-to-cart-btn">
+                                <i class="fas fa-shopping-cart"></i> أضف إلى السلة
+                            </button>
+                            <button class="btn btn-outline-primary btn-lg wishlist-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                        <div class="product-meta mt-4">
+                            <div class="meta-item">
+                                <i class="fas fa-truck"></i>
+                                <span>شحن مجاني للطلبات فوق 500 دينار جزائري</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-undo"></i>
+                                <span>إرجاع مجاني خلال 30 يوم</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>ضمان لمدة سنة</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Details Tabs -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <ul class="nav nav-tabs" id="productTabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#description">الوصف</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#specifications">المواصفات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#reviews">التقييمات</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content mt-4">
+                        <div class="tab-pane fade show active" id="description">
+                            <div class="product-description-content">
+                                <h4>وصف المنتج</h4>
+                                <p>ساعة ذكية متطورة تجمع بين الأناقة والتكنولوجيا الحديثة. مصممة لتلبية احتياجاتك اليومية مع مجموعة واسعة من المميزات:</p>
+                                <ul class="features-list">
+                                    <li><i class="fas fa-check text-success"></i> شاشة AMOLED مقاس 1.4 بوصة بدقة عالية</li>
+                                    <li><i class="fas fa-check text-success"></i> مقاومة للماء حتى عمق 50 متر</li>
+                                    <li><i class="fas fa-check text-success"></i> تتبع النشاط البدني لأكثر من 100 نوع من التمارين</li>
+                                    <li><i class="fas fa-check text-success"></i> قياس معدل ضربات القلب ومستوى الأكسجين في الدم</li>
+                                    <li><i class="fas fa-check text-success"></i> بطارية تدوم حتى 14 يوم في الاستخدام العادي</li>
+                                    <li><i class="fas fa-check text-success"></i> إشعارات ذكية للمكالمات والرسائل والتطبيقات</li>
+                                </ul>
+                                <div class="usage-scenarios mt-4">
+                                    <h5>مثالية للاستخدام في:</h5>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="usage-card">
+                                                <i class="fas fa-running"></i>
+                                                <h6>الرياضة والتمارين</h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="usage-card">
+                                                <i class="fas fa-briefcase"></i>
+                                                <h6>الاستخدام اليومي</h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="usage-card">
+                                                <i class="fas fa-swimming-pool"></i>
+                                                <h6>السباحة والرياضات المائية</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="specifications">
+                            <div class="specifications-content">
+                                <div class="spec-group">
+                                    <h5>المواصفات العامة</h5>
+                                    <div class="spec-table">
+                                        <div class="spec-row">
+                                            <div class="spec-label">الشاشة</div>
+                                            <div class="spec-value">AMOLED 1.4 بوصة، دقة 454 × 454 بكسل</div>
+                                        </div>
+                                        <div class="spec-row">
+                                            <div class="spec-label">المعالج</div>
+                                            <div class="spec-value">معالج ثنائي النواة 1.2 جيجاهرتز</div>
+                                        </div>
+                                        <div class="spec-row">
+                                            <div class="spec-label">الذاكرة</div>
+                                            <div class="spec-value">1GB RAM + 8GB تخزين داخلي</div>
+                                        </div>
+                                        <div class="spec-row">
+                                            <div class="spec-label">البطارية</div>
+                                            <div class="spec-value">420mAh، تدعم الشحن السريع</div>
+                                        </div>
+                                        <div class="spec-row">
+                                            <div class="spec-label">مقاومة الماء</div>
+                                            <div class="spec-value">5ATM (حتى 50 متر)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="spec-group mt-4">
+                                    <h5>المستشعرات</h5>
+                                    <div class="spec-table">
+                                        <div class="spec-row">
+                                            <div class="spec-label">معدل ضربات القلب</div>
+                                            <div class="spec-value">مستشعر بصري متطور</div>
+                                        </div>
+                                        <div class="spec-row">
+                                            <div class="spec-label">التسارع</div>
+                                            <div class="spec-value">مقياس تسارع ثلاثي المحاور</div>
+                                        </div>
+                                        <div class="spec-row">
+                                            <div class="spec-label">الجيروسكوب</div>
+                                            <div class="spec-value">مستشعر ثلاثي المحاور</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="spec-group mt-4">
+                                    <h5>الاتصال</h5>
+                                    <div class="spec-table">
+                                        <div class="spec-row">
+                                            <div class="spec-label">البلوتوث</div>
+                                            <div class="spec-value">إصدار 5.0</div>
+                                        </div>
+                                        <div class="spec-row">
+                                            <div class="spec-label">GPS</div>
+                                            <div class="spec-value">مدمج مع دعم GLONASS</div>
+                                        </div>
+                                        <div class="spec-row">
+                                            <div class="spec-label">WiFi</div>
+                                            <div class="spec-value">802.11 b/g/n</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="reviews">
+                            <div class="reviews-content">
+                                <div class="reviews-summary">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-4">
+                                            <div class="overall-rating text-center">
+                                                <h2>4.5</h2>
+                                                <div class="stars">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </div>
+                                                <p>من 150 تقييم</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="rating-bars">
+                                                <div class="rating-bar">
+                                                    <span class="stars">5 نجوم</span>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-success" style="width: 70%"></div>
+                                                    </div>
+                                                    <span class="percentage">70%</span>
+                                                </div>
+                                                <div class="rating-bar">
+                                                    <span class="stars">4 نجوم</span>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-success" style="width: 20%"></div>
+                                                    </div>
+                                                    <span class="percentage">20%</span>
+                                                </div>
+                                                <div class="rating-bar">
+                                                    <span class="stars">3 نجوم</span>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-warning" style="width: 7%"></div>
+                                                    </div>
+                                                    <span class="percentage">7%</span>
+                                                </div>
+                                                <div class="rating-bar">
+                                                    <span class="stars">2 نجوم</span>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-danger" style="width: 2%"></div>
+                                                    </div>
+                                                    <span class="percentage">2%</span>
+                                                </div>
+                                                <div class="rating-bar">
+                                                    <span class="stars">1 نجمة</span>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-danger" style="width: 1%"></div>
+                                                    </div>
+                                                    <span class="percentage">1%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- User Reviews List -->
+                                <div class="user-reviews mt-4">
+                                    <!-- Review 1 -->
+                                    <div class="review-item">
+                                        <div class="review-header">
+                                            <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="User" class="reviewer-avatar">
+                                            <div class="reviewer-info">
+                                                <h6>أحمد محمد</h6>
+                                                <div class="stars">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="review-date">2024-01-15</span>
+                                            </div>
+                                        </div>
+                                        <div class="review-body">
+                                            <p>ساعة رائعة جداً، جودة الصناعة ممتازة والبطارية تدوم لفترة طويلة. أنصح بها بشدة!</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Review 2 -->
+                                    <div class="review-item">
+                                        <div class="review-header">
+                                            <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="User" class="reviewer-avatar">
+                                            <div class="reviewer-info">
+                                                <h6>سارة أحمد</h6>
+                                                <div class="stars">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <span class="review-date">2024-01-10</span>
+                                            </div>
+                                        </div>
+                                        <div class="review-body">
+                                            <p>تصميم جميل وخفيفة الوزن. تتبع النشاط البدني دقيق جداً. فقط الشاشة تحتاج لتحسين في ضوء الشمس المباشر.</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Add Review Button -->
+                                    <div class="add-review-section text-center mt-4">
+                                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addReviewModal">
+                                            <i class="fas fa-plus"></i> أضف تقييمك
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products Section -->
+    <section class="related-products py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title mb-4">منتجات مشابهة</h2>
+            <div class="row">
+                <!-- Related Product 1 -->
+                <div class="col-md-3 mb-4">
+                    <div class="product-card">
+                        <div class="product-link">
+                            <div class="product-image">
+                                <span class="badge bg-danger position-absolute m-2">جديد</span>
+                                <img src="img/watch 2.jpg" class="img-fluid" alt="Related Product 1">
+                                <div class="product-overlay">
+                                    <button class="btn btn-light btn-sm quick-view">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="btn btn-light btn-sm add-to-cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-details p-3">
+                                <h5 class="product-title">ساعة ذكية سبورت</h5>
+                                <div class="product-rating mb-2">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                    <span class="ms-2">(4.5)</span>
+                                </div>
+                                <p class="product-price">
+                                    <span class="old-price">499 دينار جزائري</span>
+                                    <span class="new-price">399 دينار جزائري</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Related Product 2 -->
+                <div class="col-md-3 mb-4">
+                    <div class="product-card">
+                        <div class="product-link">
+                            <div class="product-image">
+                                <span class="badge bg-success position-absolute m-2">خصم 15%</span>
+                                <img src="img/watch 3.jpg" class="img-fluid" alt="Related Product 2">
+                                <div class="product-overlay">
+                                    <button class="btn btn-light btn-sm quick-view">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="btn btn-light btn-sm add-to-cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-details p-3">
+                                <h5 class="product-title">ساعة ذكية كلاسيك</h5>
+                                <div class="product-rating mb-2">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="far fa-star text-warning"></i>
+                                    <span class="ms-2">(4.0)</span>
+                                </div>
+                                <p class="product-price">
+                                    <span class="old-price">699 دينار جزائري</span>
+                                    <span class="new-price">599 دينار جزائري</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Related Product 3 -->
+                <div class="col-md-3 mb-4">
+                    <div class="product-card">
+                        <div class="product-link">
+                            <div class="product-image">
+                                <span class="badge bg-primary position-absolute m-2">حصري</span>
+                                <img src="img/watch 4.jpg" class="img-fluid" alt="Related Product 3">
+                                <div class="product-overlay">
+                                    <button class="btn btn-light btn-sm quick-view">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="btn btn-light btn-sm add-to-cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-details p-3">
+                                <h5 class="product-title">ساعة ذكية ألترا</h5>
+                                <div class="product-rating mb-2">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <span class="ms-2">(5.0)</span>
+                                </div>
+                                <p class="product-price">
+                                    <span class="old-price">899 دينار جزائري</span>
+                                    <span class="new-price">799 دينار جزائري</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Related Product 4 -->
+                <div class="col-md-3 mb-4">
+                    <div class="product-card">
+                        <div class="product-link">
+                            <div class="product-image">
+                                <span class="badge bg-warning position-absolute m-2">الأكثر مبيعاً</span>
+                                <img src="img/watch 5.jpg" class="img-fluid" alt="Related Product 4">
+                                <div class="product-overlay">
+                                    <button class="btn btn-light btn-sm quick-view">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="btn btn-light btn-sm add-to-cart">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-details p-3">
+                                <h5 class="product-title">ساعة ذكية ميني</h5>
+                                <div class="product-rating mb-2">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                    <span class="ms-2">(4.5)</span>
+                                </div>
+                                <p class="product-price">
+                                    <span class="old-price">459 دينار جزائري</span>
+                                    <span class="new-price">399 دينار جزائري</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- نفس Footer من الصفحة الرئيسية -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
